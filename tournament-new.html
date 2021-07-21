@@ -26,6 +26,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/main.css">  
 </head>
 <body>
@@ -87,6 +88,9 @@
                         </div>
                         <div class="mc-card border bg-white p-4 rounded-0 rounded-bottom">
                             <h3 class="text-primary">Axis Unlimited Gaming</h3>
+                            <div class="label">
+                                <h5 class=""><span class="badge bg-primary px-3 rounded-pill">Beginner</span></h5>
+                            </div>
                             <div class="text-secondary">Turnamen dimulai:</div>
                             <div class="text-secondary fw-bold mb-3">Senin, 17 Maret 2021. 03.00WIB</div>
                             <div class="text-secondary">Mode Turnamen</div>
@@ -99,12 +103,49 @@
                                   <small class="text-secondary">All team name and user id will be saved in our tournament database. Please fill correctly.</small>
                                 </div>
                                 <div class="mb-3">
-                                  <label for="input-name" class="form-label text-secondary">Team Name</label>
-                                  <input type="text" class="form-control form-control-lg" id="input-name" placeholder="ex. GGWP Team">
+                                  <label for="input-name" class="form-label text-secondary">Nama Lengkap</label>
+                                  <input type="text" class="form-control form-control-lg" id="input-name" placeholder="">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="input-userid" class="form-label text-secondary">User Id e-PES 2021</label>
-                                  <input type="text" class="form-control form-control-lg" id="input-userid" placeholder="Player 1">
+                                  <label for="input-team" class="form-label text-secondary">Nama Tim</label>
+                                  <input type="text" class="form-control form-control-lg" id="input-team" placeholder="ex. GGWP Team">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="input-userid" class="form-label text-secondary">PES ID</label>
+                                  <input type="text" class="form-control form-control-lg" id="input-userid" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="input-email" class="form-label text-secondary">Email</label>
+                                  <input type="text" class="form-control form-control-lg" id="input-email" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="input-phone" class="form-label text-secondary">Nomor Telepon</label>
+                                  <input type="number" class="form-control form-control-lg" id="input-phone" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="input-city" class="form-label text-secondary">Kota Domisili</label>
+                                  <select id="input-city-select" class="form-control form-control-lg" name="input-city">
+                                    <option value="JKT">DKI Jakarta</option>
+                                    <option value="BDG">Bandung</option>
+                                    <option value="SMR">Semarang</option>
+                                    <option value="YGK">Yogyakarta</option>
+                                    <option value="MLG">Malang</option>
+                                    <option value="SBY">Surabaya</option>
+                                    <option value="BLI">Bali</option>
+                                    <option value="MDN">Medan</option>
+                                    <option value="MKS">Makassar</option>
+                                    <option value="JYP">Jayapura</option>
+                                    <option value="MND">Manado</option>
+                                  </select>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="input-address" class="form-label text-secondary">Alamat Lengkap</label>
+                                  <!-- <input type="text" class="form-control form-control-lg" id="input-address" placeholder=""> -->
+                                  <textarea class="form-control form-control-lg" placeholder="" id="input-address" style="height: 100px"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="input-idnumber" class="form-label text-secondary">Nomor Identitas</label>
+                                  <input type="number" class="form-control form-control-lg" id="input-idnumber" placeholder="">
                                 </div>
                               </div>
                             </form>
@@ -166,6 +207,12 @@
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#input-city-select').select2();
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/main.js"></script>

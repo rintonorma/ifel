@@ -239,41 +239,9 @@ $(document).ready(function () {
     //     format: 'dd/mm/yyyy'
     // });
 
-    $("#quiz-bronze").steps({
-        headerTag: "h3",
-        bodyTag: "section",
-        transitionEffect: "fade",
-        autoFocus: true,
-        labels: {
-          finish: "Selesai",
-          next: "Berikutnya",
-          previous: "Kembali",
-        }
-    });
+    
 
-    $("#quiz-silver").steps({
-        headerTag: "h3",
-        bodyTag: "section",
-        transitionEffect: "fade",
-        autoFocus: true,
-        labels: {
-          finish: "Selesai",
-          next: "Berikutnya",
-          previous: "Kembali",
-        }
-    });
-
-    $("#quiz-gold").steps({
-        headerTag: "h3",
-        bodyTag: "section",
-        transitionEffect: "fade",
-        autoFocus: true,
-        labels: {
-          finish: "Selesai",
-          next: "Berikutnya",
-          previous: "Kembali",
-        }
-    });
+    
 
 });
 
